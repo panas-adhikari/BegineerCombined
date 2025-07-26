@@ -236,6 +236,10 @@ if __name__ == "__main__":
                 email_slicer()
             elif choice == '6':
                 email_validator()
+            else:
+                console.print("[bold red]Invalid option selected![/bold red]")
+        except ValueError as e:
+            console.print(f"[bold red]Error: {e}[/bold red]")
         except KeyboardInterrupt:
             console.print("\n Exiting the program...")
             exit(0)
